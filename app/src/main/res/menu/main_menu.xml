@@ -8,5 +8,11 @@
         app:showAsAction="always"
      />
     <!-- always ekranda sürekli göstermesi için diğer
-    seçenekler boş olma ve göstermeme durumu -->
+       seçenekler boş olma ve göstermeme durumu -->
+
+    <!--  settings butonu ekledik menumuze ve never diyerek ekranda tıklanınca görünmesini sağladık-->
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+
 </menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vb.firebaseblogapp.PostActivity">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/border"
+        android:id="@+id/imgSelect"
+        android:layout_marginBottom="254dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:background="@android:drawable/screen_background_light_transparent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:padding="15dp"
+        android:background="@drawable/input_outline"
+        android:layout_marginBottom="169dp"
+        android:id="@+id/titleField"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Yazının Başlığı"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:text="YAYINLA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button2"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:onClick="post" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="15dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:id="@+id/DescField"
+        android:hint="Yazının açıklaması"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/titleField"
+        android:layout_alignStart="@+id/titleField"
+        android:layout_marginBottom="44dp" />
+
+</RelativeLayout>
