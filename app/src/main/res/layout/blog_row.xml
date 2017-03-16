@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/post_image"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:src="@drawable/border"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp" />
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="başlık gelecek"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp" />
+        <TextView
+            android:id="@+id/post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="açıklama"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
